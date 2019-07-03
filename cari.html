@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUGAS PEMPROGRAMAN WEB</title>
+	<!-- Style Css -->
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<!-- Style Javascript -->
+	<script language="javascript" src="js/javascript.js"></script>
+</head>
+<body>
+
+<div class="header">
+	<marquee behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()" style="font-family: Calibri; font-size:30px; color: #FAE03C; width="100%"><br><br><b>TEKNIK INFORMATIKA UAD 2019</b><br><br></marquee>
+
+</div>
+	<div class="menubar">
+		<ul>
+			<li><a href="index.html"><b>Biodata</b></a></li>
+			<li><a href="materi.html"><b>Materi Kuliah</a></b></li>
+			<li><a href="cari.html"><b>Pencarian</b></a></li>
+		</ul>
+</div>	
+
+
+<div class="menu2">
+	<br><br>
+	<h2><font color="black">HALAMAN PENCARIAN DATA INTERAKTIF</font></h2>
+	<hr width="90%">
+
+	<br>
+	<script>
+	function daftar() {
+	var nama= document.formdaftar.nama.value;
+	if(nama== "") alert("namatidakbolehkosong");
+	}
+	</script>
+
+	<form name="formcari" onSubmit="cari()">
+  	<input class="search" name="keyword" type="text" placeholder="Cari..." required>	
+  	<input class="button" type="submit" value="Cari">		
+	</form>
+	<br><br><br><br>
+
+
+	
+	
+</div>
+
+
+
+<div class="footer">
+	<br>
+		<font color="#6495ED"><b>&copy</b></font>&nbspCOPYRIGHT BY Wahyu Oktavian - Universitas Ahmad Dahlan - Yogyakarta - <font color="#FFD700"><b>2019</b></font>
+</div>
+
+</body>
+</html>

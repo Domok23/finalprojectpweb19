@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUGAS PEMPROGRAMAN WEB</title>
+	<!-- Style Css -->
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<!-- Style Javascript -->
+	<script language="javascript" src="js/script1.js"></script>
+</head>
+<body>
+
+<div class="header">
+<marquee behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()" style="font-family: calibri; font-size:30px; color: #FAE03C; width="100%"><br><br><b>TEKNIK INFORMATIKA UAD 2019</b><br><br></marquee>
+</div>
+	<div class="menubar">
+		<ul>
+			<li><a href="index.html"><b>Biodata</b></a></li>
+			<li><a href="materi.html"><b>Materi Kuliah</a></b></li>
+			<li><a href="cari.html"><b>Pencarian</b></a></li>
+		</ul>
+</div>	
+
+
+
+<div class="menu2">
+	<br><br>
+	<h2><font color="black">HALAMAN RANGKUMAN MATERI</font></h2>
+	<hr width="90%">
+
+	<br>
+	<div class="content">
+		<p><br>
+			<b>MATERI 1 : PERKENALAN CSS</b>
+			<br><br>
+			CSS singkatan dari Cascading Style Sheets. Secara bahasa berarti lembaran gaya yang mengalir ke bawah.Secara istilah, CSS adalah bahasa penulisan yang digunakan untuk mendeskripsikan penampilan sebuah dokumen markup.CSS selalu digunakan bersamaan dengan HTML, meskipun kita dapat juga menggunakannya untuk mengatur style dokumen markup lain seperti XML, SVG dan XUL.Agar lebih terbayang, coba perhatikan tiga dokumen HTML di bawah ini dan lihat perbedaan tampilannya. 
+			<br><br>
+			<b>MENGAPA HARUS MENGGUNAKAN CSS?</b>
+			<br><br>
+			HTML dirancang tidak ditujukan untuk mendesain sebuah halaman web, tapi hanya untuk menampilkan konten saja. Pada saat HTML beranjak ke versi 3.2, diperkenalkan tag <font> yang digunakan untuk mengatur tampilan sebuah teks, seperti jenis font yang digunakan, warna, dan ukuran. Tapi dengan adanya tag ini, malah jadi menyulitkan proses development, karena tag ini mesti disematkan di banyak halaman untuk mendapatkan hasil style yang sama. Bayangkan ketika kita sudah memiliki banyak halaman web, belasan atau puluhan, lalu kemudian hendak mengedit beberapa style saja misalkan ukuran font dan ingin semua halaman mendapatkan perubahan yang konsisten. Maka kita harus memperbaharui tag tersebut di setiap halaman satu per satu!
+            <br><br>
+            Untuk itu, dibuatlah CSS, yang memisahkan style dari halaman web, sehingga antara konten pada HTML dan desain tampilan pada dokumen CSS dapat dikerjakan di dua tempat berbeda. Dengan kata lain, dokumen HTML cukup berisi konten saja, dan satu dokumen CSS dapat disematkan pada setiap dokumen HTML agar semuanya menampilkan style yang sama dan konsisten.
+			<br><br>
+			<b>PENERAPAN CSS PADA HTML:</b>
+			<br><br>
+			CSS biasanya disimpan di dalam sebuah file berekstensi .css dan disematkan di dalam dokumen HTML untuk memberikan style pada halaman tersebut. Meski demikian, kita tetap dapat menambahkan sintaks CSS langsung di dalam dokumen HTML, di dalam tag <style></style> untuk mengakomodir penerapan style yang hanya digunakan di dalam dokumen tersebut. Kita juga dapat menyematkan sintaks CSS langsung di dalam atribut style pada suatu tag HTML untuk menerapkan style yang hanya digunakan pada tag itu saja. Berikut adalah contoh penerapan ketiga mode tersebut:
+			<br><br>
+			<b>DOKUMEN YANG DISEMATKAN FILE : STYLE.CSS :</b>
+			<br><br>
+			<br><br>
+			!DOCTYPE html
+			<br><br>
+            html>
+            <br><br>
+            head>
+            <br><br>
+            title>HTML dengan CSS /title>
+            <br><br>
+            link rel="stylesheet" type="text/css" href="style.css" />
+            <br><br>
+            /head>
+            <br><br>
+            body>
+            <br><br>
+            h1>Selamat Datang, Programmer! /h1>
+            <br><br>
+            <br><br>
+            /body>
+            <br><br>
+            /html>
+			<br><br>
+			<br><br>
+			<b>DOKUMEN DENGAN CSS DI DALAMNYA :</b>
+			<br><br>
+			<br><br>
+			!DOCTYPE html>
+			<br><br>
+            html>
+            <br><br>
+            head>
+            <br><br>
+            title>HTML dengan CSS /title>
+            <br><br>
+            style>
+           <br><br>
+            h1 { text-align: center; color: lightsteelblue; }
+            <br><br>
+           /style>
+           <br><br>
+           /head>
+           <br><br>
+           body>
+           <br><br>
+           h1>Selamat Datang, Programmer! /h1>
+           <br><br>
+          <br><br>
+          /body>
+          <br><br>
+          /html>
+		  <br><br>
+		  <br><br>
+		  <b>DOKUMEN DENGAN CSS PADA TAG : </b>
+		  <br><br>
+		  <br><br>
+		  !DOCTYPE html>
+		  <br><br>
+          html>
+          <br><br>
+          head>
+          <br><br>
+          title>HTML dengan CSS /title>
+          <br><br>
+          /head>
+          <br><br>
+          body>
+          <br><br>
+          h1 style="text-align:center;color:lightsteelblue;">Selamat Datang, Programmer! /h1>
+          <br><br>
+          <br><br>
+          /body>
+          <br><br>
+          /html> 
+          <br><br>
+		  <br><br>
+		  Sintaks CSS
+          <br><br>
+         <b> SEKARANG MARI KITA PERHATIKAN SINTAKS PENULISAN KODE CSS :</b>
+			<br><br>
+			<br><br>
+			h1 { text-align: center; color: red; }
+			<br><br>
+		    <br><br>
+		    <b>PADA CONTOH KODE DI ATAS:</b>
+			<br><br>
+			<br><br>
+			 h1 -> selector
+			 <br><br>
+             { text-align: center; color: red; } -> deklarasi style
+             <br><br>
+             text-align -> property
+             <br><br>
+             center -> value
+             <br><br>
+             color -> property
+             <br><br>
+             red-> value
+             <br><br>
+             Selector adalah bagian CSS untuk merujuk elemen HTML yang ingin dikenakan style. Ada beberapa jenis selector yang dapat kita gunakan untuk memudahkan pekerjaan styling kita pada CSS, seperti selector element, selector class, dan selector id.
+             <br><br>
+             Pada kode di atas elemen yang dirujuk oleh kode CSS kita adalah h1>. Elemen h1> ini kita buat supaya tulisannya rata tengah, maka kita beri property text-align dengan value center. Property dan value CSS dipisahkan dengan tanda titik dua (:). Kita dapat memberikan lebih dari satu property style dengan memisahkan antar property dengan tanda titik koma (;).  property dan value disimpan di dalam kurung kurawal { dan }.
+             <br><br>
+			<b>SELECTOR ELEMENT</b>
+			<br><br>
+			Selector ini mengacu elemen HTML berdasarkan nama elemennya. Pada contoh berikut:
+			<br><br>
+			<br><br>
+			!DOCTYPE html>
+			<br><br>
+html>
+<br><br>
+    head>
+    <br><br>
+        title>HTML dengan CSS /title>
+        <br><br>
+        style>
+        <br><br>
+            h1 { color: red; }
+            <br><br>
+            p { color: blue; }
+            <br><br>
+        /style>
+        <br><br>
+    /head>
+    <br><br>
+body>
+<br><br>
+    h1>Welcome/h1>
+    <br><br>
+    h1>Selamat Datang, Programmer!/h1>
+    <br><br>
+/body>
+<br><br>
+</html>
+			<br><br>
+			itu berarti kita menerapkan style color:red pada semua elemen h1> yang ada 
+			di dokumen dan menerapkan style color:blue pada semua elemen p>.
+			<br><br>
+			<br><br>
+			<b>SELECTOR CLASS</b>
+			<br><br>
+			<br><br>
+		    Selector ini mengacu elemen berdasarkan nama classnya. Nama class pada elemen diacu dengan nilai atribut class diawali oleh tanda titik (.). Pada contoh berikut:
+			<br><br>
+			<br><br>
+			!DOCTYPE html>
+			<br><br>
+html>
+<br><br>
+    head>
+    <br><br>
+        title>HTML dengan CSS/title>
+        <br><br>
+        style>
+        <br><br>
+            .merah { color: red; }
+            <br><br>
+        /style>
+        <br><br>
+    /head>
+    <br><br>
+body>
+<br><br>
+    h1>Welcome/h1>
+    <br><br>
+    h1 class="merah">Selamat Datang, Programmer!/h1>
+    <br><br>
+    p class="merah">Selamat belajar pemrograman di CodePolitan /p>
+    <br><br>
+/body>
+<br><br>
+/html>
+			<br><br>
+			<b>SELECTOR ID : </b>
+			<br><br>
+			Selector ini mengacu elemen berdasarkan nama idnya. Nama id pada elemen diacu dengan nilai atribut id diawali oleh tanda pagar (#). Pada contoh berikut:
+			<br><br>
+			<br><br>
+	       !DOCTYPE html>
+	       <br><br>
+html>
+<br><br>
+    head>
+    <br><br>
+        title>HTML dengan CSS /title>
+        <br><br>
+        style>
+        <br><br>
+            #judul-utama { color:red; }
+            <br><br>
+            #subjudul { color:blue; }
+            <br><br>
+        /style>
+        <br><br>
+    /head>
+    <br><br>
+body>
+<br><br>
+    h1 id="judul-utama">Welcome! /h1>
+    <br><br>
+    h2 id="subjudul">Selamat Datang, Programmer!/h2>
+    <br><br>
+    <br><br>
+/body>
+<br><br>
+/html>
+			<br><br>
+			<br><br>
+			elemen h1> akan berwarna merah dan h2> akan berwarna biru.
+			<br><br>
+			<b>MENGGABUNG SELECTOR</b>
+			<br><br>
+			<br><br>
+		    !DOCTYPE html>
+		    <br><br>
+            html>
+           <br><br>
+    head>
+    <br><br>
+        title>HTML dengan CSS /title>
+        <br><br>
+        style>
+        <br><br>
+            h1, p { color:#333; text-align:center; }
+            <br><br>
+        /style>
+        <br><br>
+    /head>
+    <br><br>
+body>
+<br><br>
+    h1>Selamat Datang, Programmer!/h1>
+    <br><br>
+    <br><br>
+/body>
+<br><br>
+/html>
+<br><br>
+			<br><br>
+			Pada contoh di atas,  semua elemen h1> dan p> pada dokumen akan dikenai style yang sama.
+			<br><br>
+			<br><br>
+			PENUTUP
+			<br><br>
+			<br><br>
+			Pada tutorial kali ini kita telah mempelajari apa itu CSS, apa kegunaan CSS dan cara menggunakannya, bagaimana sintaks CSS, apa itu selector, bagaimana menggunakan selector element, class dan id, serta menggabungkan selector untuk style yang sama.
+            <br><br>
+            <br><br>
+            <br><br> 
+
+            Referensi: http://www.w3schools.com/css
+	</div>
+
+	
+
+
+	
+	
+</div>
+
+
+
+<div class="footer">
+	<br>
+		<font color="#6495ED"><b>&copy</b></font>&nbspCOPYRIGHT BY Wahyu Oktavian - Universitas Ahmad Dahlan - Yogyakarta - <font color="#FFD700"><b>2019</b></font>
+</div>
+
+</body>
+</html>
